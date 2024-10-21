@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Open Source Club</title>
+    <link rel="stylesheet" href="../css/test.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- professor section -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <style>
+      /* Hero Section Styling */
+      .hero {
+        position: relative;
+        background: url("../Images/landing_page_bg.png") no-repeat;
+        background-size: cover;
+        height: 100vh;
+        color: white;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+      }
+
+      .hero h1 {
+        font-family: "Tomorrow", sans-serif;
+        font-size: 7.5rem;
+        margin-bottom: 1rem;
+        font-weight: 700;
+        letter-spacing: -6px;
+        color: #b96425;
+        filter: drop-shadow(0 0 0.15rem black);
+        text-shadow: black -8px 5px;
+      }
+
+      .hero p {
+        font-size: 1.5rem;
+      }
+
+      /* Navbar Styling */
+      .navbar {
+        background-color: rgba(0, 0, 0, 0.5);
+      }
+
+      .navbar-nav .nav-link {
+        color: white !important;
+        font-size: 1.1rem;
+        font-weight: bold;
+      }
+
+      .btn-custom {
+        background-color: #6610f2;
+        color: white;
+      }
+
+      .logo img {
+        width: 60px;
+        height: 60px;
+      }
+
+      #club_logo {
+        width: 230px;
+        height: 150px;
+      }
+
+      #container-professors {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-height: 110vh;
+        background: black;
+      }
+
+      .staff-coordinators {
+        color: #ece8e5;
+        font-size: 150px;
+        margin-bottom: -200px;
+        margin-top: 50px;
+        font-weight: 500;
+        letter-spacing: 3px;
+        color: rgba(128, 128, 128, 0.815);
+        font-family: "Odibee Sans", sans-serif;
+      }
+
+      @media (max-width: 431px) {
+        .staff-coordinators {
+          font-size: 45px;
+          margin-bottom: -100px;
+          margin-top: -250px;
+          text-align: center;
+        }
+      }
+
+      .slider-wrapper {
+        overflow: hidden;
+        max-width: 1500px;
+
+        margin: 0 70px 55px;
+        height: 500px;
+
+        justify-self: center;
+        align-items: center;
+      }
+
+      .card-list .card-item {
+        height: 230px;
+
+        color: #fff;
+        user-select: none;
+        padding: 35px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border-radius: 30px;
+        backdrop-filter: blur(30px);
+        background: rgba(255, 255, 255, 0.2);
+        background: linear-gradient(0.25turn, #3d208f, #200c57);
+        margin-top: 150px;
+        box-shadow: inset 0 0 0 10px #200c57, inset 0 0 0 12px white;
+      }
+
+      .card-list .card-item .user-image {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        border: 5px solid #b96425;
+        position: absolute;
+        top: -35%;
+      }
+
+      .card-list .card-item .user-name {
+        margin: 80px 0 20px;
+      }
+
+      .card-list .card-item .user-profession {
+        font-size: 1.15rem;
+        color: #e3e3e3;
+        font-weight: 500;
+      }
+
+      .slider-wrapper .swiper-pagination-bullet {
+        background: #fff;
+        height: 13px;
+        width: 13px;
+        opacity: 0.5;
+      }
+
+      .slider-wrapper .swiper-pagination-bullet-active {
+        opacity: 1;
+      }
+
+      .swiper .swiper-slide-button {
+        color: #fff;
+        margin-top: -110px;
+        margin-left: -10px;
+        margin-right: -10px;
+        transition: 0.2s ease;
+      }
+
+      .slider-wrapper .swiper-slide-button:hover {
+        color: #4658ff;
+      }
+
+      @media (max-width: 768px) {
+        .slider-wrapper {
+          margin: 0 10px 40px;
+        }
+
+        .slider-wrapper .swiper-slide-button {
+          display: none;
+        }
+      }
+
+      @media (max-width: 431px) {
+        .swiper {
+          margin-bottom: -650px;
+        }
+        .staff-coordinators {
+          font-size: 35px;
+          margin-bottom: -100px;
+          margin-top: -250px;
+          text-align: center;
+        }
+
+        .slider-wrapper {
+          margin: 0 10px 40px;
+        }
+
+        .swiper-slide-button {
+          display: block; /* Ensure buttons are displayed */
+          position: absolute; /* Position them absolutely */
+          top: 60%; /* Center vertically */
+          transform: translateY(-50%); /* Adjust for centering */
+          width: 40px; /* Set a width for the buttons */
+          height: 40px; /* Set a height for the buttons */ /* Match the purple box */
+          border-radius: 50%; /* Make them circular */
+          z-index: 10; /* Ensure they are above other elements */
+        }
+
+        .swiper-button-prev {
+          left: 70px; /* Position left button */
+        }
+
+        .swiper-button-next {
+          right: 60px; /* Position right button */
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Navbar Section -->
+    <nav
+      class="navbar navbar-expand-lg position-absolute z-1 w-100 bg-transparent"
+    >
+      <div class="container">
+        <a
+          class="navbar-brand logo d-flex align-items-center justify-content-center"
+          href="#"
+          id="club_logo"
+        >
+          <img src="../Images//crescent_logo.png" alt="Logo" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item p-2">
+              <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item p-2">
+              <a class="nav-link" href="#">Projects</a>
+            </li>
+            <li class="nav-item p-2">
+              <a class="nav-link" href="#">Blogs</a>
+            </li>
+            <li class="nav-item p-2">
+              <a class="nav-link" href="#">Events</a>
+            </li>
+          </ul>
+          <img
+            src="../Images//club_logo.png"
+            alt=""
+            height="100"
+            width="150"
+            id="club_logo"
+          />
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <h1>Open Source Club</h1>
+      <p>Empowering Students for the Future Tech</p>
+    </section>
+
+    <!--End Hero Section-->
+
+    <!-- Staff Coordinator-->
+    <section id="container-professors">
+      <h1 class="staff-coordinators">STAFF COORDINATORS</h1>
+
+      <div class="container swiper">
+        <div class="slider-wrapper">
+          <div class="card-list swiper-wrapper">
+            <div class="card-item swiper-slide">
+              <img
+                src="../Images/soundariya.jpg"
+                alt="User Image"
+                class="user-image"
+              />
+              <h2 class="user-name">Soundariya</h2>
+              <p class="user-profession">Designation</p>
+            </div>
+
+            <div class="card-item swiper-slide">
+              <img
+                src="../Images/sharon_priya.png"
+                alt="User Image"
+                class="user-image"
+              />
+              <h2 class="user-name">Sharoun Priya</h2>
+              <p class="user-profession">Designation</p>
+            </div>
+
+            <div class="card-item swiper-slide">
+              <img
+                src="../Images/amsavalli.jpg"
+                alt="User Image"
+                class="user-image"
+              />
+              <h2 class="user-name">Amsavalli</h2>
+              <p class="user-profession">Designation</p>
+            </div>
+
+            <div class="card-item swiper-slide">
+              <img src="images/img-4.jpg" alt="User Image" class="user-image" />
+              <h2 class="user-name">Name</h2>
+              <p class="user-profession">Designation</p>
+            </div>
+
+            <div class="card-item swiper-slide">
+              <img src="images/img-5.jpg" alt="User Image" class="user-image" />
+              <h2 class="user-name">Name</h2>
+              <p class="user-profession">Designation</p>
+            </div>
+
+            <div class="card-item swiper-slide">
+              <img src="images/img-6.jpg" alt="User Image" class="user-image" />
+              <h2 class="user-name">Name</h2>
+              <p class="user-profession">Designation</p>
+            </div>
+          </div>
+
+          <div class="swiper-pagination"></div>
+        </div>
+        <div class="swiper-slide-button swiper-button-prev"></div>
+        <div class="swiper-slide-button swiper-button-next"></div>
+      </div>
+    </section>
+    <!-- end staff coordinator -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/micro-slider@1.0.9/dist/micro-slider.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"></script>
+    <script src="../Js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

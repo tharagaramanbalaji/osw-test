@@ -1,0 +1,416 @@
+* {
+    font-family: "Tulpen One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #fff !important;
+}
+
+.bg {
+    background-color: #000;
+    height: 100vh;
+    width: 100%;
+}
+
+/* html,
+body {
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    width: 100%;
+} */
+
+/* Hero Section Styling */
+.hero {
+    position: relative;
+    background: url('../Images/landing_page_bg.png') no-repeat;
+    background-size: cover;
+    height: 100vh;
+    color: white;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.hero h1 {
+    font-family: 'Tomorrow', sans-serif;
+    font-size: 7.5rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+    letter-spacing: -6px;
+    color: #B96425;
+    filter: drop-shadow(0 0 0.15rem black);
+    text-shadow: black -8px 5px;
+}
+
+.hero p {
+    font-size: 1.5rem;
+}
+
+/* Navbar Styling */
+.navbar {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.navbar-nav .nav-link {
+    color: white !important;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.btn-custom {
+    background-color: #6610f2;
+    color: white;
+}
+
+.logo img {
+    width: 60px;
+    height: 60px;
+}
+
+#club_logo {
+    width: 230px;
+    height: 150px;
+}
+
+#container-professors {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 110vh;
+    background: black;
+}
+
+.staff-coordinators {
+    color: #ece8e5;
+    font-size: 150px;
+    margin-bottom: -200px;
+    margin-top: 50px;
+    font-weight: 500;
+    letter-spacing: 3px;
+    color: rgba(128, 128, 128, 0.815);
+    font-family: 'Odibee Sans', sans-serif;
+}
+
+@media (max-width: 431px) {
+    .staff-coordinators {
+        font-size: 45px;
+        margin-bottom: -100px;
+        margin-top: -250px;
+        text-align: center;
+    }
+}
+
+.slider-wrapper {
+    overflow: hidden;
+    max-width: 1500px;
+
+    margin: 0 70px 55px;
+    height: 500px;
+
+    justify-self: center;
+    align-items: center;
+
+}
+
+.card-list .card-item {
+
+    height: 230px;
+
+    color: #fff;
+    user-select: none;
+    padding: 35px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+    backdrop-filter: blur(30px);
+    background: rgba(255, 255, 255, 0.2);
+    background: linear-gradient(0.25turn, #3D208F, #200C57);
+    margin-top: 150px;
+    box-shadow: inset 0 0 0 10px #200C57, inset 0 0 0 12px white;
+}
+
+.card-list .card-item .user-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 5px solid #B96425;
+    position: absolute;
+    top: -35%
+}
+
+.card-list .card-item .user-name {
+    margin: 80px 0 20px;
+}
+
+.card-list .card-item .user-profession {
+    font-size: 1.15rem;
+    color: #e3e3e3;
+    font-weight: 500;
+}
+
+.slider-wrapper .swiper-pagination-bullet {
+    background: #fff;
+    height: 13px;
+    width: 13px;
+    opacity: 0.5;
+}
+
+.slider-wrapper .swiper-pagination-bullet-active {
+    opacity: 1;
+}
+
+.swiper .swiper-slide-button {
+    color: #fff;
+    margin-top: -110px;
+    margin-left: -10px;
+    margin-right: -10px;
+    transition: 0.2s ease;
+}
+
+.slider-wrapper .swiper-slide-button:hover {
+    color: #4658ff;
+}
+
+@media (max-width: 768px) {
+    .slider-wrapper {
+        margin: 0 10px 40px;
+    }
+
+    .slider-wrapper .swiper-slide-button {
+        display: none;
+    }
+}
+
+@media (max-width: 431px) {
+    .swiper {
+        margin-bottom: -650px;
+    }
+}
+/* members */
+
+.swiper {
+    width: 100%;
+    overflow: hidden;
+}
+
+.swiper-slide {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: none;
+    width: 290px;
+    text-align: center;
+}
+
+.swiper-slide img {
+    width: 250px;
+    height: 400px;
+    border-radius: 50px;
+    background: linear-gradient(0deg, #3319D3 0%, #B96425 100%);
+}
+
+.text-content {
+    text-align: center;
+    font-size: 16px;
+    color: #fff;
+}
+
+/* Custom Swiper Navigation Buttons */
+.swiper-button-next,
+.swiper-button-prev {
+    width: 50px;
+    height: 50px;
+    background-color: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+}
+
+.swiper-button-prev {
+    left: 250px;
+}
+
+.swiper-button-next {
+    right: 250px;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+    font-size: 24px;
+    color: #000;
+}
+
+.swiper-slide-active {
+    margin-top: 50px;
+    z-index: 10;
+}
+
+#team-content {
+    font-size: 260px;
+    position: absolute;
+    text-align: center;
+    display: flex;
+    font-weight: 400;
+    top: 5px;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+#meet-content {
+    font-size: 155px;
+    margin-left: 50px;
+    letter-spacing: 2px;
+}
+
+.team1,
+.team2,
+.team3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.team3 p {
+    font-size: 50px;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+    .swiper-slide {
+        width: 220px;
+    }
+
+    .swiper-slide img {
+        width: 200px;
+        height: 320px;
+    }
+
+    .swiper-button-prev {
+        left: 100px;
+    }
+
+    .swiper-button-next {
+        right: 100px;
+    }
+}
+
+@media (max-width: 992px) {
+    #team-content {
+        font-size: 200px;
+    }
+
+    #meet-content {
+        font-size: 120px;
+    }
+
+    .team3 p {
+        font-size: 40px;
+    }
+
+    .swiper-slide {
+        width: 180px;
+    }
+
+    .swiper-slide img {
+        width: 150px;
+        height: 250px;
+    }
+
+    .swiper-button-prev,
+    .swiper-button-next {
+        width: 40px;
+        height: 40px;
+    }
+
+    .swiper-button-next::after,
+    .swiper-button-prev::after {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    #team-content {
+        font-size: 150px;
+    }
+
+    #meet-content {
+        font-size: 100px;
+    }
+
+    .team3 p {
+        font-size: 35px;
+    }
+
+    .swiper-slide {
+        width: 150px;
+    }
+
+    .swiper-slide img {
+        width: 120px;
+        height: 200px;
+    }
+
+    .swiper-button-prev {
+        left: 50px;
+    }
+
+    .swiper-button-next {
+        right: 50px;
+    }
+
+    .swiper-button-prev,
+    .swiper-button-next {
+        width: 35px;
+        height: 35px;
+    }
+}
+
+@media (max-width: 576px) {
+    #team-content {
+        font-size: 100px;
+    }
+
+    #meet-content {
+        font-size: 80px;
+    }
+
+    .team3 p {
+        font-size: 30px;
+    }
+
+    .swiper-slide {
+        width: 120px;
+    }
+
+    .swiper-slide img {
+        width: 100px;
+        height: 160px;
+    }
+
+    .swiper-button-prev,
+    .swiper-button-next {
+        width: 30px;
+        height: 30px;
+    }
+
+    .swiper-button-prev {
+        left: 20px;
+    }
+
+    .swiper-button-next {
+        right: 20px;
+    }
+}

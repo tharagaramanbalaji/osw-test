@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Open Source Club</title>
+    <link rel="stylesheet" type="text/css" href="../css/styles.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'> 
+    <link rel="icon" href="../Images/club_logo.png">
+
+    <!-- professor section -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
+    <style>
+
+        /* *{
+            background-color: black;
+        } */
+            .hero {
+            position: relative;
+            background: url('../Images/landing_page_bg.png') no-repeat;
+            background-size: cover;
+            height: 100vh;
+            color: white;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        .hero h1 {
+            font-family: 'Tomorrow', sans-serif;
+            font-size: 7.5rem;
+            margin-bottom: 1rem;
+            font-weight: 700;
+            letter-spacing: -6px;
+            color: #B96425;
+            filter: drop-shadow(0 0 0.15rem black);
+            text-shadow: black -8px 5px;
+        }
+
+        .hero p {
+            font-size: 1.5rem;
+        }
+
+        /* Navbar Styling */
+/* Navbar Styling */
+.navbar {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 1rem 0; /* Add padding for better height */
+    top: 0;
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center; /* Center vertically */
+}
+
+.navbar-nav .nav-link {
+    color: white !important;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+#club_logo {
+    width: 100px;
+    height: 100px; /* Adjust to maintain aspect ratio */
+}
+
+    </style>
+</head>
+
+<body>
+
+
+
+    <main>
+
+        <!-- 
+    ██╗░░██╗ ███████╗ ██████╗░ ░█████╗░
+    ██║░░██║ ██╔════╝ ██╔══██╗ ██╔══██╗
+    ███████║ █████╗░░ ██████╔╝ ██║░░██║
+    ██╔══██║ ██╔══╝░░ ██╔══██╗ ██║░░██║
+    ██║░░██║ ███████╗ ██║░░██║ ╚█████╔╝
+    ╚═╝░░╚═╝ ╚══════╝ ╚═╝░░╚═╝ ░╚════╝░ -->
+        <!-- Navbar Section -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-transparent position-absolute z-1 w-100 color-white">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="../Images/crescent_logo.png" alt="Logo" id="club_logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Blogs</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Events</a>
+                        </li>
+                    </ul>
+                    <img src="../Images/club_logo.png" alt="" height="100" width="150" id="club_logo">
+                </div>
+            </div> 
+        </nav>
+        
+
+        <!-- Hero Section -->
+        <section class="hero">
+            <h1>Open Source Club</h1>
+            <p>Empowering Students for the Future Tech</p>
+        </section>
+
+        <!--End Hero Section-->
+
+
+        <!--         
+    ░██████╗░ ██████╗░ ██╗ ██████╗░
+    ██╔════╝░ ██╔══██╗ ██║ ██╔══██╗
+    ██║░░██╗░ ██████╔╝ ██║ ██║░░██║
+    ██║░░╚██╗ ██╔══██╗ ██║ ██║░░██║
+    ╚██████╔╝ ██║░░██║ ██║ ██████╔╝
+    ░╚═════╝░ ╚═╝░░╚═╝ ╚═╝ ╚═════╝░  -->
+
+        <!-- <section id="gridcss">
+            <div class="container">
+
+                <div id="content-1" class="item sidebar"><b id="bold-text-1" class="bold-text-1">About US</b></div>
+                <div id="content-7" class="item content-1 bold-text-1">
+                    <h1 id="content-8">Mission</h1>
+                    <p>Empowering students with essential IT knowledge and skills<br> through hands-on learning and
+                        industry
+                        insights.</p>
+                </div>
+                <div id="content-6" class="item content-2 bold-text-1">
+                    <h1 id="content-9">Vision</h1>
+                    <p>Inspiring innovation and excellence to produce<br> industry-ready graduates leading technological
+                        advancements.</p>
+                </div>
+                <div class="item content-3 bold-text-1">Join Now!</div>
+                <div class="item content-4"><i class='bx bx-right-down-arrow-circle arrow-down'></i></div>
+                <div class="item content-5 bold-text-1">
+                    <h6>Welcome to the Open Source Club, a premier organization dedicated to fostering a passion for
+                        technology
+                        and innovation among students. We serves as a hub for aspiring engineers to come together,
+                        learn,
+                        and collaborate on the latest trends and developmentsin the IT industry. </h6>
+                    <h6>Whether you are a beginner looking to start your coding journey or an advanced
+                        programmer eager to hone your skills, the Open Source Club offers a supportive and dynamic
+                        environment
+                        for all.
+                    </h6>
+                </div>
+            </div>
+        </section> -->
+
+        <!-- 
+    ███████╗ ██╗░░░██╗ ███████╗ ███╗░░██╗ ████████╗ ░██████╗
+    ██╔════╝ ██║░░░██║ ██╔════╝ ████╗░██║ ╚══██╔══╝ ██╔════╝
+    █████╗░░ ╚██╗░██╔╝ █████╗░░ ██╔██╗██║ ░░░██║░░░ ╚█████╗░
+    ██╔══╝░░ ░╚████╔╝░ ██╔══╝░░ ██║╚████║ ░░░██║░░░ ░╚═══██╗
+    ███████╗ ░░╚██╔╝░░ ███████╗ ██║░╚███║ ░░░██║░░░ ██████╔╝
+    ╚══════╝ ░░░╚═╝░░░ ╚══════╝ ╚═╝░░╚══╝ ░░░╚═╝░░░ ╚═════╝░ -->
+
+        <!-- <section id="events" class="events">
+            <h1 class="members">400+</h1>
+            <h1 class="no_of_events">5</h1>
+            <h1 class="executives">48</h1>
+        </section> -->
+
+        <!--         
+    ██████╗░ ██████╗░ ░█████╗░ ███████╗ ███████╗ ░██████╗ ░██████╗ ░█████╗░ ██████╗░ ░██████╗
+    ██╔══██╗ ██╔══██╗ ██╔══██╗ ██╔════╝ ██╔════╝ ██╔════╝ ██╔════╝ ██╔══██╗ ██╔══██╗ ██╔════╝
+    ██████╔╝ ██████╔╝ ██║░░██║ █████╗░░ █████╗░░ ╚█████╗░ ╚█████╗░ ██║░░██║ ██████╔╝ ╚█████╗░
+    ██╔═══╝░ ██╔══██╗ ██║░░██║ ██╔══╝░░ ██╔══╝░░ ░╚═══██╗ ░╚═══██╗ ██║░░██║ ██╔══██╗ ░╚═══██╗
+    ██║░░░░░ ██║░░██║ ╚█████╔╝ ██║░░░░░ ███████╗ ██████╔╝ ██████╔╝ ╚█████╔╝ ██║░░██║ ██████╔╝
+    ╚═╝░░░░░ ╚═╝░░╚═╝ ░╚════╝░ ╚═╝░░░░░ ╚══════╝ ╚═════╝░ ╚═════╝░ ░╚════╝░ ╚═╝░░╚═╝ ╚═════╝░ -->
+
+        <!-- <section id="container-professors">
+            <h1 class="staff-coordinators">STAFF COORDINATORS</h1>
+
+            <div class="container swiper">
+                <div class="slider-wrapper">
+                    <div class="card-list swiper-wrapper ">
+                        <div class="card-item swiper-slide">
+                            <img src="../Images/soundariya.jpg" alt="User Image" class="user-image">
+                            <h2 class="user-name">Soundariya</h2>
+                            <p class="user-profession">Designation</p>
+
+                        </div>
+
+                        <div class="card-item swiper-slide">
+                            <img src="../Images/sharon_priya.png" alt="User Image" class="user-image">
+                            <h2 class="user-name">Sharoun Priya</h2>
+                            <p class="user-profession">Designation</p>
+
+                        </div>
+
+                        <div class="card-item swiper-slide">
+                            <img src="../Images/amsavalli.jpg" alt="User Image" class="user-image">
+                            <h2 class="user-name">Amsavalli</h2>
+                            <p class="user-profession">Designation</p>
+
+                        </div>
+
+                        <div class="card-item swiper-slide">
+                            <img src="images/img-4.jpg" alt="User Image" class="user-image">
+                            <h2 class="user-name">Name</h2>
+                            <p class="user-profession">Designation</p>
+
+                        </div>
+
+                        <div class="card-item swiper-slide">
+                            <img src="images/img-5.jpg" alt="User Image" class="user-image">
+                            <h2 class="user-name">Name</h2>
+                            <p class="user-profession">Designation</p>
+
+                        </div>
+
+                        <div class="card-item swiper-slide">
+                            <img src="images/img-6.jpg" alt="User Image" class="user-image">
+                            <h2 class="user-name">Name</h2>
+                            <p class="user-profession">Designation</p>
+
+                        </div>
+                    </div>
+
+                    <div class="swiper-pagination"></div>
+
+                </div>
+                <div class="swiper-slide-button swiper-button-prev"></div>
+                <div class="swiper-slide-button swiper-button-next"></div>
+            </div>
+
+
+
+
+        </section> -->
+
+        <!-- 
+    ███╗░░░███╗ ███████╗ ███████╗ ████████╗   ░█████╗░ ██╗░░░██╗ ██████╗░   ████████╗ ███████╗ ░█████╗░ ███╗░░░███╗
+    ████╗░████║ ██╔════╝ ██╔════╝ ╚══██╔══╝   ██╔══██╗ ██║░░░██║ ██╔══██╗   ╚══██╔══╝ ██╔════╝ ██╔══██╗ ████╗░████║
+    ██╔████╔██║ █████╗░░ █████╗░░ ░░░██║░░░   ██║░░██║ ██║░░░██║ ██████╔╝   ░░░██║░░░ █████╗░░ ███████║ ██╔████╔██║
+    ██║╚██╔╝██║ ██╔══╝░░ ██╔══╝░░ ░░░██║░░░   ██║░░██║ ██║░░░██║ ██╔══██╗   ░░░██║░░░ ██╔══╝░░ ██╔══██║ ██║╚██╔╝██║
+    ██║░╚═╝░██║ ███████╗ ███████╗ ░░░██║░░░   ╚█████╔╝ ╚██████╔╝ ██║░░██║   ░░░██║░░░ ███████╗ ██║░░██║ ██║░╚═╝░██║
+    ╚═╝░░░░░╚═╝ ╚══════╝ ╚══════╝ ░░░╚═╝░░░   ░╚════╝░ ░╚═════╝░ ╚═╝░░╚═╝   ░░░╚═╝░░░ ╚══════╝ ╚═╝░░╚═╝ ╚═╝░░░░░╚═╝ -->
+
+        <!-- <section class="section-team">
+            <div id="Carousel-slider">
+                <section>
+                    <div class="Carousel-slider">
+                        <div class="slider-item member-1" data-href="#"></div>
+                        <div class="slider-item member-2" data-href="#"></div>
+                        <div class="slider-item member-3" data-href="#"></div>
+                        <div class="slider-item member-4" data-href="#"></div>
+                        <div class="slider-item member-5" data-href="#"></div>
+                    </div>
+                </section>
+            </div>
+        </section> -->
+
+        <!-- 
+    ███████╗ ░█████╗░ ██████╗░ ███╗░░░███╗ ░██████╗
+    ██╔════╝ ██╔══██╗ ██╔══██╗ ████╗░████║ ██╔════╝
+    █████╗░░ ██║░░██║ ██████╔╝ ██╔████╔██║ ╚█████╗░
+    ██╔══╝░░ ██║░░██║ ██╔══██╗ ██║╚██╔╝██║ ░╚═══██╗
+    ██║░░░░░ ╚█████╔╝ ██║░░██║ ██║░╚═╝░██║ ██████╔╝
+    ╚═╝░░░░░ ░╚════╝░ ╚═╝░░╚═╝ ╚═╝░░░░░╚═╝ ╚═════╝░ -->
+
+        <!-- <section id="form_section" class="forms">
+            <div class="container2 ">
+
+                <div class="item2 content">
+                    <p id="p1">Step</p>
+                    <p id="p2">Into Our</p>
+                    <p id="p3">Community</p>
+                </div>
+                <div class="item2 name entryarea">
+                    <input type="text" required>
+                    <div class="labelline">Name</div>
+                </div>
+                <div class="item2 email_id entryarea">
+                    <input type="email" required>
+                    <div class="labelline">Email ID</div>
+                </div>
+                <div class="item2 phone_number entryarea">
+                    <input type="text" required>
+                    <div class="labelline">Phone</div>
+                </div>
+                <div class="item2 rrn entryarea">
+                    <input type="text" required>
+                    <div class="labelline">RRN</div>
+                </div>
+                <div id="expect" class="item2 expect entryarea">
+                    <input type="text" required>
+                    <div class="labelline">What do you expect from the club?</div>
+                </div>
+                <div class="item2 submit entryarea">
+                    <button id="button" type="submit" class="btn">Submit</button>
+                </div>
+            </div>
+        </section> -->
+
+    </main>
+
+    <!-- 
+    ███████╗ ░█████╗░ ░█████╗░ ████████╗ ███████╗ ██████╗░
+    ██╔════╝ ██╔══██╗ ██╔══██╗ ╚══██╔══╝ ██╔════╝ ██╔══██╗
+    █████╗░░ ██║░░██║ ██║░░██║ ░░░██║░░░ █████╗░░ ██████╔╝
+    ██╔══╝░░ ██║░░██║ ██║░░██║ ░░░██║░░░ ██╔══╝░░ ██╔══██╗
+    ██║░░░░░ ╚█████╔╝ ╚█████╔╝ ░░░██║░░░ ███████╗ ██║░░██║
+    ╚═╝░░░░░ ░╚════╝░ ░╚════╝░ ░░░╚═╝░░░ ╚══════╝ ╚═╝░░╚═╝ -->
+
+    <!-- <footer class="footer">
+
+        <p class="footer_paragraph">&copy; 2024 | All Rights Reserved by Open Source Club</p>
+        <ul class="social">
+            <li class="list">
+                <a href="https://www.instagram.com/"><i class='bx bxl-instagram icon-water'></i></a>
+            </li>
+            <li class="list">
+                <a href="https://www.medium.com/"><i class="bx bxl-medium-square icon-water"></i></a>
+            </li>
+            <li class="list">
+                <a href="https://www.github.com/"><i class="bx bxl-github icon-water"></i></a>
+            </li>
+        </ul>
+
+    </footer> -->
+    <!-- professor -->
+    <!-- Linking SwiperJS script -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Linking custom script -->
+    <!-- <script src="../Js/script.js"></script> -->
+
+    <!-- meet our team -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/micro-slider@1.0.9/dist/micro-slider.min.js"></script>
+    <script src="../Js/script.js"></script>
+</body>
+
+</html>
